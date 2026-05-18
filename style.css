@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Layout Styling */
 body {
     font-family: Arial,sans-serif;
@@ -47,10 +48,46 @@ input, button {
 button {
     background: #28a745;
     color: white;
+=======
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eef2f3;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    max-width: 900%;
+    width: 100%;
+}
+
+.input-panel, .report-panel {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.input-panel { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+.report-panel { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+
+input { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+
+button {
+    padding: 12px;
+    background: #4facfe;
+    color: white;
+    border: none;
+    border-radius: 5px;
+>>>>>>> 88739c94ed42248869335cad6ad6410d05b11ab5
     cursor: pointer;
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* The Print Magic */
 @media print {
     .no-print {display: none; } /* Hides the Form*/
@@ -58,3 +95,11 @@ button {
     .preview-section { margin: 0; padding: 0; }
     .card { box-shadow: none; border: 1px solid #ccc; }
 }
+=======
+table { width: 100%; margin-top: 20px; border-collapse: collapse; }
+th, td{ border: 1px solid #ddd; padding: 15px; }
+th { background-color: #f8f9fa; }
+
+.pass { color: green; font-weight: bold; }
+.fail { color: red; font-weight: bold; }
+>>>>>>> 88739c94ed42248869335cad6ad6410d05b11ab5
