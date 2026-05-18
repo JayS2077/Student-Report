@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width", initial-scale="1.0">
+    <title>Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main-container no-print">
+        <!--Input Side-->
+        <section class="form-selection">
+            <h2>Enter your Details</h2>
+            <input type="text" id="nameInput" placeholder="Full Name">
+            <input type="text" id="jobInput" placeholder="Job Title (e.g. Data Analyst)">
+            <input type="email" id="emailInput" placeholder="Email Address">
+            <input type="tel" id="phoneInput" placeholder="Phone Number">
+            <button onclick="window.print()">Download PDF / Print</button>
+        </section>
+        
+        <!--preview Side-->
+        <section class="preview-section">
+            <div class="card" id="businessCard">
+                <div class="card-content">
+                    <h1 id="displayName">Your Name</h1>
+                    <p id="displayJob">Proffessional Title</p>
+                    <hr>
+                    <div class="contact-info">
+                        <p> <span id="displayEmail">email@example.com</span></p>
+                        <p> <span id="displayPhone">+123 456 789</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>    
